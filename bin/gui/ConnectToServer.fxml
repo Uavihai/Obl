@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.ConnectToServer">
+   <children>
+      <Button fx:id="connectBtn" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#CoonectToServer" text="Connect" />
+      <TextField fx:id="ServerIPtxt" layoutX="25.0" layoutY="30.0" onKeyReleased="#connectWithKeyRelease" promptText="Server ip" />
+      <HBox layoutX="241.0" layoutY="440.0" />
+      <Label fx:id="serverMsg" layoutX="74.0" layoutY="67.0" />
+   </children>
+</AnchorPane>

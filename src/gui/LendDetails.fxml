@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.LendDetails">
+   <children>
+      <Label layoutX="144.0" prefHeight="106.0" prefWidth="231.0" text="Lend Details">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookRow" editable="false" layoutX="113.0" layoutY="130.0" prefHeight="25.0" prefWidth="293.0" />
+      <TextField fx:id="subscriberRow" editable="false" layoutX="113.0" layoutY="94.0" prefHeight="25.0" prefWidth="293.0" />
+      <Button fx:id="editBtn" layoutX="174.0" layoutY="253.0" mnemonicParsing="false" onAction="#editLendDetails" prefHeight="25.0" prefWidth="73.0" text="Edit" />
+      <Button layoutX="269.0" layoutY="253.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label layoutX="30.0" layoutY="98.0" text="Subscriber id:" />
+      <Label layoutX="30.0" layoutY="134.0" text="Book name:" />
+      <Label layoutX="30.0" layoutY="172.0" text="Lend date:" />
+      <Label layoutX="30.0" layoutY="209.0" text="Return date:" />
+      <DatePicker fx:id="lendDate" editable="false" layoutX="113.0" layoutY="168.0" prefHeight="25.0" prefWidth="127.0" />
+      <DatePicker fx:id="returnDate" editable="false" layoutX="113.0" layoutY="205.0" prefHeight="25.0" prefWidth="127.0" />
+      <Button fx:id="viewSubscriberDetailsBtn" layoutX="418.0" layoutY="94.0" mnemonicParsing="false" onAction="#viewSubscriberDetails" text="Details" />
+      <Button fx:id="viewBookDetailsBtn" layoutX="418.0" layoutY="130.0" mnemonicParsing="false" onAction="#viewBookDetails" text="Details" />
+   </children>
+</AnchorPane>

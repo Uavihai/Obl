@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.BookDetails">
+   <children>
+      <Label layoutX="145.0" prefHeight="106.0" prefWidth="240.0" text="Book Details">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookName" editable="false" layoutX="112.0" layoutY="92.0" prefHeight="25.0" prefWidth="224.0" />
+      <HBox layoutX="97.0" layoutY="340.0" spacing="30.0">
+         <children>
+            <Button fx:id="editBtn" layoutX="149.0" layoutY="341.0" mnemonicParsing="false" onAction="#editBookDetailsBtn" prefHeight="25.0" prefWidth="63.0" text="Edit" />
+            <Button fx:id="contentTableBtn" layoutX="239.0" layoutY="341.0" mnemonicParsing="false" onAction="#ViewContentTable" text="View Content Table" />
+            <Button layoutX="325.0" layoutY="341.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+         </children>
+      </HBox>
+      <Label layoutX="41.0" layoutY="96.0" text="Name:" />
+      <Label layoutX="39.0" layoutY="130.0" text="Author:" />
+      <TextField fx:id="bookAuthor" editable="false" layoutX="112.0" layoutY="126.0" prefHeight="25.0" prefWidth="224.0" />
+      <Label layoutX="38.0" layoutY="169.0" text="Subject:" />
+      <TextField fx:id="bookSubject" editable="false" layoutX="112.0" layoutY="165.0" prefHeight="25.0" prefWidth="136.0" />
+      <TextArea fx:id="bookDescription" editable="false" layoutX="112.0" layoutY="207.0" prefHeight="113.0" prefWidth="342.0" wrapText="true" />
+      <Label layoutX="37.0" layoutY="207.0" text="Description:" />
+      <CheckBox fx:id="IsPopulatChckbox" layoutX="297.0" layoutY="169.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="78.0" text="Is Popular:" />
+   </children>
+</AnchorPane>

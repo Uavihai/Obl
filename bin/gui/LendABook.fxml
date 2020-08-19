@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="343.0" prefWidth="554.0" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.LendABook">
+   <children>
+      <Label layoutX="145.0" prefHeight="106.0" prefWidth="240.0" text="Lend a book" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="32.0" layoutY="139.0" spacing="20.0">
+         <children>
+            <HBox layoutX="43.0" layoutY="142.0" prefHeight="0.0" prefWidth="502.0" spacing="20.0">
+               <children>
+                  <Button layoutX="43.0" layoutY="142.0" mnemonicParsing="false" onAction="#chooseASubscriber" prefHeight="25.0" prefWidth="133.0" text="Choose a subscriber" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="subscriberRow" editable="false" layoutX="179.0" layoutY="142.0" prefHeight="25.0" prefWidth="255.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="viewSubBtn" alignment="CENTER" disable="true" layoutX="385.0" layoutY="142.0" mnemonicParsing="false" onAction="#viewSubsciber" prefHeight="25.0" prefWidth="110.0" text="View Subsciber" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="43.0" layoutY="182.0" prefHeight="30.0" prefWidth="502.0" spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button layoutX="43.0" layoutY="182.0" mnemonicParsing="false" onAction="#chooseABook" prefHeight="25.0" prefWidth="133.0" text="Choose a book" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="bookRow" editable="false" layoutX="139.0" layoutY="182.0" prefHeight="25.0" prefWidth="257.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="viewBookBth" alignment="CENTER" disable="true" layoutX="419.0" layoutY="182.0" mnemonicParsing="false" onAction="#viewBook" prefHeight="25.0" prefWidth="110.0" text="View Book" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" spacing="17.0">
+         <children>
+            <Label text="Lend date:" />
+            <TextField fx:id="lendDateTxt" editable="false" prefHeight="25.0" prefWidth="176.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Label text="Return date:" />
+            <TextField fx:id="returnDateTxt" editable="false" prefHeight="25.0" prefWidth="176.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="50.0">
+         <children>
+            <Button fx:id="lendBtn" layoutX="184.0" layoutY="238.0" mnemonicParsing="false" onAction="#lend" prefHeight="25.0" prefWidth="59.0" text="Lend" HBox.hgrow="ALWAYS" />
+            <Button layoutX="279.0" layoutY="238.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>

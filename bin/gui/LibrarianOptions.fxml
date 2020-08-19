@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.LibrarianOptions">
+   <children>
+      <Label layoutX="40.0" layoutY="6.0" prefHeight="60.0" prefWidth="171.0" text="Librarian">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <VBox layoutX="40.0" layoutY="83.0" spacing="20.0">
+         <children>
+            <Button fx:id="lendABookBtn" layoutX="40.0" layoutY="101.0" mnemonicParsing="false" onAction="#lendABook" prefHeight="25.0" prefWidth="171.0" text="Lend a book" />
+            <Button fx:id="returnABookBtn" layoutX="40.0" layoutY="132.0" mnemonicParsing="false" onAction="#returnABook" prefHeight="25.0" prefWidth="171.0" text="Return a book" />
+            <Button fx:id="addSubscriberBtn" layoutX="40.0" layoutY="157.0" mnemonicParsing="false" onAction="#addSubscriber" prefHeight="25.0" prefWidth="171.0" text="Add Subscriber " />
+            <Button fx:id="searchSubscriberBtn" layoutX="40.0" layoutY="194.0" mnemonicParsing="false" onAction="#searchSubscriber" prefHeight="25.0" prefWidth="171.0" text="Search Subscriber " />
+         </children>
+      </VBox>
+      <Button fx:id="logOut" layoutX="196.0" layoutY="260.0" mnemonicParsing="false" onAction="#Logout" text="Logout" />
+   </children>
+</AnchorPane>

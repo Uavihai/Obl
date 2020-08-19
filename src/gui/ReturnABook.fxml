@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="277.0" prefWidth="554.0" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientUIControllers.ReturnABook">
+   <children>
+      <Label layoutX="145.0" text="Returnn a book" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="32.0" layoutY="139.0" spacing="20.0">
+         <children>
+            <HBox layoutX="43.0" layoutY="142.0" prefHeight="0.0" prefWidth="502.0" spacing="20.0">
+               <children>
+                  <Button layoutX="43.0" layoutY="142.0" mnemonicParsing="false" onAction="#chooseASubscriber" prefHeight="25.0" prefWidth="133.0" text="Choose a subscriber" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="subscriberRow" editable="false" layoutX="179.0" layoutY="142.0" prefHeight="25.0" prefWidth="255.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="viewSubBtn" alignment="CENTER" disable="true" layoutX="385.0" layoutY="142.0" mnemonicParsing="false" onAction="#viewSubsciber" prefHeight="25.0" prefWidth="110.0" text="View Subsciber" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox spacing="20.0">
+         <children>
+            <Button fx:id="selectBookToReturnBtn" mnemonicParsing="false" onAction="#selectBookToReturn" text="Select book to return" />
+            <TextField fx:id="bookDetails" prefHeight="25.0" prefWidth="246.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="50.0">
+         <children>
+            <Button fx:id="returnBtn" mnemonicParsing="false" onAction="#returnBook" text="Return" />
+            <Button layoutX="279.0" layoutY="238.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>
